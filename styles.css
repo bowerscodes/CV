@@ -1,18 +1,21 @@
 * {
-    margin: none;
     padding: none;
 }
 
 
 body {
-    background: rgb(204,204,204); 
+    /* background: rgb(204,204,204);  */
+    background: white;
+    margin: 0;
   }
   page {
     background: white;
     display: block;
+    margin: 0;
+    /* margin-top: 0.5cm;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.5cm; */
     /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
   }
   page[size="A4"] {  
@@ -27,14 +30,17 @@ body {
 
 
 #grid {
+    position: relative;
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: 1fr 5fr;
     margin: 15px;
     /* border: 4px solid black; */
     height: auto;
-    max-height: 100%;
+    max-height: 95%;
     width: auto;
+    top: 0.1cm;
+    /* padding-top: 0.3cm; */
     place-content: center;
 }
 
@@ -54,6 +60,7 @@ body {
     color: #3D405B;
     align-items: center;
     margin: auto auto auto 0;
+    max-width: 65%;
     
 }
 
@@ -62,6 +69,7 @@ h1 {
     color: #3D405B;
     font-size: 2.5em;
     line-height: 0.5em;
+    text-shadow: 2px 2px rgba(61, 64, 91, 0.5);
 }
 
 h2 {
@@ -74,7 +82,8 @@ h2 {
 h3 {
     font-family: 'Roboto Slab';
     color: #3D405B;
-    margin: 0.3em 0;
+    margin: 0.5em 0 0;
+    text-shadow: 1px 1px rgba(61, 64, 91, 0.5);
 }
 
 
@@ -94,6 +103,7 @@ h3 {
     border: 3px solid #3D405B;
     border-radius: 100%;
     margin: 20px 30px 2px auto;
+    /* box-shadow: 3px 3px rgba(61, 64, 91, 0.5); */
 }
 
 hr {
@@ -112,6 +122,11 @@ hr {
     font-size: 0.8em;
 }
 
+a {
+    color: #3D405B;
+}
+
+
 .column {
     width: auto;
     height: auto;
@@ -124,24 +139,45 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 4px;
 }
 
 #right-container {
     border-left: 3px solid #3D405B;
+    margin-bottom: 4px;
 
 }
 
 .content-container {
+    width: 92%;
     margin: 8px 8px;
+    margin-bottom: 0;
     border: 3px solid #3D405B;
+    box-shadow: 3px 3px rgba(61, 64, 91, 0.5)
+}
+
+.content-container.tech {
+    /* border: 3px solid #81B29A; */
+    box-shadow: 3px 3px rgba(129, 178, 154, 0.5);
+}
+
+.content-container.qa {
+    /* border: 3px solid #FCA311; */
+    box-shadow: 3px 3px rgba(252, 163, 17, 0.5)
+}
+
+.content-container.pm {
+    /* border: 3px solid #D4A0A7; */
+    box-shadow: 3px 3px rgba(212, 160, 167, 0.5);
 }
 
 .content-header {
     background-color: #81B29A;
+    /* border-bottom: 3px solid #3D405B; */
 }
 
 .content-header> .tech {
-    background-color: #FCA311;
+    background-color: #81B29A;
 }
 
 .content-header> .qa {
