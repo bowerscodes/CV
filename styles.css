@@ -51,6 +51,7 @@ body {
 }
 
 #header-text {
+    color: #3D405B;
     align-items: center;
     margin: auto auto auto 0;
     
@@ -58,15 +59,24 @@ body {
 
 h1 {
     font-family: 'Roboto Slab', Serif;
+    color: #3D405B;
     font-size: 2.5em;
     line-height: 0.5em;
 }
 
 h2 {
     font-family: 'work sans';
+    color: #3D405B;
     font-weight: normal;
     line-height: 0.5em;
 }
+
+h3 {
+    font-family: 'Roboto Slab';
+    color: #3D405B;
+    margin: 0.3em 0;
+}
+
 
 #pic-container {
     grid-column: 1;
@@ -81,18 +91,19 @@ h2 {
     width: 150px;
     height: 150px;
     grid-column: 1;
-    border: 3px solid black;
+    border: 3px solid #3D405B;
     border-radius: 100%;
     margin: 20px 30px 2px auto;
 }
 
 hr {
-    border: 1px solid black;
+    border: 1px solid #3D405B;
 }
 
 #header-contact {
     display: flex;
     flex-direction: row;
+    color: #3D405B;
 }
 
 .contact {
@@ -108,53 +119,102 @@ hr {
 }
 
 #left-container {
-
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #right-container {
-    border-left: 3px solid black;
+    border-left: 3px solid #3D405B;
 
 }
 
 .content-container {
     margin: 8px 8px;
-    border: 3px solid black;
+    border: 3px solid #3D405B;
+}
+
+.content-header {
+    background-color: #81B29A;
+}
+
+.content-header> .tech {
+    background-color: #FCA311;
+}
+
+.content-header> .qa {
+    background-color: #FCA311;
+}
+
+.content-header> .pm {
+    background-color: #D4A0A7;
 }
 
 .content-title {
-    background-color: black;
+    background-color: #3D405B;
     color: white;
     font-family: 'Roboto Slab';
     font-size: 0.9em;
     font-weight: bold;
     text-align: left;
+    text-shadow: 1px 1px #3D405B;
     padding-left: 5px;
     padding-bottom: 2.5px;
-    border: 1px solid black;
+    border: 1px solid #3D405B;
 }
 
 .content-subtitle {
-    background-color: black;
+    background-color: #3D405B;
     color: white;
     font-family: 'Work Sans';
     font-size: 0.8em;
     text-align: left;
+    text-shadow: 0.5px 0.5px #3D405B;
     padding-left: 5px;
     padding-bottom: 2.5px;
-    border: 1px solid black;
-
+    border: 1px solid #3D405B;
 }
+
+.content-title.tech, .content-subtitle.tech {
+    background-color: #81B29A;
+    border: 1px solid #81B29A;
+}
+
+.content-title.qa, .content-subtitle.qa {
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+}
+
+.content-title.pm, .content-subtitle.pm {
+    background-color: #D4A0A7;
+    border: 1px solid #D4A0A7;
+}
+
+.content-title.yellow {
+    background-color: #F9C74F;
+    border: 1px solid #F9C74F;
+}
+
+.content-title.orange {
+    background-color: #F8961E;
+    border: 1px solid #F8961E;
+}
+
 
 .content-text {
     margin: 5px 5px;
-    color: black;
+    color: #3D405B;
     font-family: 'Work Sans';
     font-size: 0.8em;
     line-height: 1.1em;
     text-align: left;
 }
 
-h3 {
-    font-family: 'Roboto Slab';
-    margin: 0.3em 0;
+ul {
+    line-height: 1.1em;
+    margin: 15px 0;
+    padding-left: 25px;
+    padding-right: 5px;
 }
