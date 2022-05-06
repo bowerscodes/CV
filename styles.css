@@ -4,8 +4,9 @@
 
 
 body {
-    /* background: rgb(204,204,204);  */
-    background: white;
+    /* TOGGLE GREY BACKGROUND OFF FOR PRINTING */
+    background: rgb(204,204,204); 
+    /* background: white; */
     margin: 0;
   }
   page {
@@ -16,7 +17,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5cm; */
-    /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   }
   page[size="A4"] {  
     width: 21cm;
